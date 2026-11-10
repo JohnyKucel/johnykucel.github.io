@@ -3,13 +3,110 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JohnyKucel</title>
+<meta name="description" content="JohnyKucel builds open-source tools for Squeekchain Genesis and web3, including the Squeek Merge Planner.">
+<title>JohnyKucel — Developer</title>
+<style>
+  :root{--bg:#f6f6f3;--surface:#fff;--ink:#1a1d1a;--muted:#5b655e;--line:#dfe2db;--accent:#0f766e;--accent-soft:#e0f2f0;--radius:14px}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:28px 20px 64px}
+  header{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+  .brand{font-weight:800;font-size:19px;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+  nav{display:flex;gap:18px;flex-wrap:wrap}
+  nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:14.5px}
+  nav a:hover{color:var(--accent)}
+  .hero{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:32px 30px;margin-bottom:22px}
+  .tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+  h1{font-size:clamp(30px,5vw,42px);line-height:1.08;letter-spacing:-.02em;margin:14px 0 12px}
+  h1 span{color:var(--accent)}
+  .hero p{color:var(--muted);font-size:16.5px;margin:0;max-width:58ch}
+  .hero .cta{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;border-radius:10px;font-size:15px}
+  .btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+  section{margin-top:34px}
+  h2{font-size:21px;letter-spacing:-.01em;margin:0 0 6px}
+  .sub{color:var(--muted);margin:0 0 16px;font-size:15px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:14px}
+  .card h3{margin:0 0 6px;font-size:18px}
+  .card h3 a{color:var(--ink);text-decoration:none}
+  .card h3 a:hover{color:var(--accent);text-decoration:underline}
+  .card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+  .links{display:flex;gap:16px;flex-wrap:wrap;font-size:14.5px}
+  .links a{color:var(--accent);font-weight:600;text-decoration:none}
+  .links a:hover{text-decoration:underline}
+  .pill{display:inline-block;background:#eef0ea;color:var(--muted);font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;margin-left:8px;vertical-align:middle}
+  ul.clean{list-style:none;margin:0;padding:0}
+  ul.clean li{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin-bottom:10px;font-size:15px}
+  ul.clean li b a{color:var(--ink);text-decoration:none}
+  ul.clean li b a:hover{color:var(--accent);text-decoration:underline}
+  ul.clean li span{color:var(--muted)}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  footer a{color:var(--accent);font-weight:600;text-decoration:none}
+  @media (max-width:560px){.hero{padding:24px 20px}.card{padding:18px}}
+</style>
 </head>
 <body>
-<main>
-<h1>JohnyKucel</h1>
-<p>I build tools for Squeekchain and web3.</p>
-<p><a href="https://github.com/JohnyKucel/squeek-merge-planner">Squeek Merge Planner</a></p>
-</main>
+<div class="wrap">
+
+<header>
+  <a class="brand" href="https://johnykucel.github.io/">JohnyKucel</a>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#opensource">Open source</a>
+    <a href="#about">About</a>
+    <a href="https://github.com/JohnyKucel">GitHub</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <span class="tag">Developer &middot; Squeekchain &middot; Web3</span>
+  <h1>I build tools for <span>Squeekchain</span> and web3.</h1>
+  <p>Open-source tooling for the Squeekchain Genesis program and small web3 utilities &mdash; built in the open, used by real holders, shipped as plain static web apps.</p>
+  <div class="cta">
+    <a class="btn" href="https://johnykucel.github.io/squeek-merge-planner/">Open Squeek Merge Planner</a>
+    <a class="btn ghost" href="https://github.com/JohnyKucel">GitHub profile</a>
+  </div>
+</div>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="sub">Tools I built and maintain.</p>
+
+  <div class="card">
+    <h3><a href="https://johnykucel.github.io/squeek-merge-planner/">Squeek Merge Planner</a><span class="pill">Flagship</span></h3>
+    <p>A planner for Squeekchain Genesis holders. It calculates which Squeeks can merge right now, what level the merged result reaches, and how many more you need to hit your target &mdash; so merges can be planned instead of guessed. Single-file HTML web app, no backend, no wallet connection.</p>
+    <div class="links">
+      <a href="https://johnykucel.github.io/squeek-merge-planner/">Live app &rarr;</a>
+      <a href="https://github.com/JohnyKucel/squeek-merge-planner">Source code &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section id="opensource">
+  <h2>Open source I work with</h2>
+  <p class="sub">Forks and tooling I use and maintain for my own workflow.</p>
+  <ul class="clean">
+    <li><b><a href="https://github.com/JohnyKucel/octra_pre_client">octra_pre_client</a></b> <span class="pill">Fork &middot; Python</span><br>
+      <span>A terminal wallet reminiscent of DOS-era TUI interfaces, built with a modern asynchronous architecture.</span></li>
+    <li><b><a href="https://github.com/JohnyKucel/wallet-gen">wallet-gen</a></b> <span class="pill">Fork &middot; HTML</span><br>
+      <span>Browser-based wallet generator.</span></li>
+    <li><b><a href="https://github.com/JohnyKucel/dexkitcontracts">dexkitcontracts</a></b> <span class="pill">Fork &middot; Solidity</span><br>
+      <span>Smart contracts from the DexKit project.</span></li>
+    <li><b><a href="https://github.com/JohnyKucel/register">register</a></b> <span class="pill">Fork &middot; JavaScript</span><br>
+      <span>My fork of the is-a-dev register, used to claim the johnykucel.is-a.dev subdomain for this page.</span></li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p class="sub">Currently focused on Squeekchain Genesis tooling: planning helpers for holders, plus small web3 utilities. Everything I ship is public on GitHub, and the tools run entirely in the browser &mdash; no accounts, no servers, no wallet connections.</p>
+</section>
+
+<footer>
+  <span>&copy; 2026 JohnyKucel</span>
+  <span>Built with plain HTML &middot; <a href="https://github.com/JohnyKucel">github.com/JohnyKucel</a></span>
+</footer>
+
+</div>
 </body>
 </html>
